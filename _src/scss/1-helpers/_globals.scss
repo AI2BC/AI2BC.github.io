@@ -30,7 +30,7 @@ $fontMain: "";
   margin-bottom: 0;
   padding-#{$start-direction}: 10px;
   padding-#{$end-direction}: 10px;
-  color: #ff5000;
+  color: #88D12E;
   z-index: 5;
 
   &::before,
@@ -43,7 +43,7 @@ $fontMain: "";
     border-radius: 1rem;
     top: 50%;
     translate: 0 -50%;
-    background-color: #ff5000;
+    background-color: #88D12E;
   }
 
   &::before {
@@ -159,7 +159,7 @@ $g-colors: red, blue, green;
     height: calc(100% + 40px);
     transform: translate(-50%, -50%);
     path {
-      stroke: #ff5000;
+      stroke: #88D12E;
       stroke-width: 0.5rem;
       fill: transparent;
     }
@@ -493,7 +493,7 @@ $g-colors: red, blue, green;
 
     .bar {
       width: 0;
-      background-color: #ff5000;
+      background-color: #88D12E;
       height: inherit;
       border-radius: inherit;
       @include ma-transition(width, 1s, ease-in-out);
@@ -524,9 +524,9 @@ $g-colors: red, blue, green;
       justify-content: center;
       width: 2.25rem;
       height: 2.25rem;
-      color: #ff5000;
+      color: #88D12E;
       border: 1px solid;
-      border-color: #ff5000;
+      border-color: #88D12E;
       border-radius: 0.25rem;
 
       @include ma-transition(all, 0.3s, ease);
@@ -537,7 +537,7 @@ $g-colors: red, blue, green;
 
       &:hover,
       &.active {
-        background-color: #ff5000;
+        background-color: #88D12E;
         color: $clr-white;
 
         .ma-page-link {
@@ -620,7 +620,7 @@ $g-colors: red, blue, green;
     font-size: 2rem;
     padding: 0.75rem;
     border-radius: 0.25rem;
-    background-color: rgba(#ff5000, 0.15);
+    background-color: rgba(#88D12E, 0.15);
     @include ma-transition(all, 0.3s);
   }
 

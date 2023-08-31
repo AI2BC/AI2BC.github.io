@@ -37,18 +37,10 @@ $(function () {
     }
   }
 
-  // Start open/close navbar search box
-  $(".header-search-box form").on("click", function (e) {
-    e.stopPropagation();
-  });
+  /* ************** projects logos carousel **************/
+  // Instantiate the Bootstrap carousel
 
-  $(".header-search-btn").on("click", function () {
-    $(".header-search-box").addClass("show");
 
-    setTimeout(function () {
-      $(".search-input").focus();
-    }, 1000);
-  });
 
   /* ********* Start dark mode switcher ***********/
 

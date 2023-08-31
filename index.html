@@ -41,7 +41,129 @@
 		
 		<!-- main-LTR -->
 		<link rel="stylesheet" href="css/main-LTR.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	</head>
+	<style>
+    .carousel-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .carousel-item {
+       /* Divide equally and adjust space */
+      background-color: #f8f9fa; /* Background color */
+      margin: 10px; /* Adjust margin */
+    }
+    .carousel-item img {
+      max-width: 80%;
+		border: 2px solid #00d9ff; /* Blue border around each image */
+		padding: 20px;
+      height: auto;
+      display: block;
+      margin: auto;
+	  justify-content: center;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Adjust position */
+    }
+    .carousel-control-prev {
+      left: -20px; /* Position to the left */
+    }
+    .carousel-control-next {
+      right: -20px; /* Position to the right */
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: transparent;
+      border: none;
+      font-size: 30px;
+    }
+	/* responsive line/stroke effect*/
+		hr {
+	background: black;
+	height: 2px;
+	position: relative;
+	}
+
+	hr:before {
+	width: 10px;
+	height: 10px;
+	background: black;
+	content: '';
+	display: block;
+	position: absolute;
+	left: -2px;
+	top: -4px;
+	border-radius: 5px;
+	}
+
+	hr:after {
+	width: 10px;
+	height: 10px;
+	background: black;
+	content: '';
+	display: block;
+	position: absolute;
+	right: -2px;
+	top: -4px;
+	border-radius: 5px;
+	}
+	/* For the tab section */
+	.tab-vertical .nav.nav-tabs {
+    float: left;
+    display: block;
+    margin-right: 0px;
+    border-bottom: 0;
+	}
+
+	.tab-vertical .nav.nav-tabs .nav-item {
+		margin-bottom: 6px;
+	}
+
+	.tab-vertical .nav-tabs .nav-link {
+		border: 1px solid transparent;
+		border-top-left-radius: .25rem;
+		border-top-right-radius: .25rem;
+		background: #fff;
+		padding: 17px 49px;
+		color: #ffff;
+		background-color: #88D12E;
+		-webkit-border-radius: 4px 0px 0px 4px;
+		-moz-border-radius: 4px 0px 0px 4px;
+		border-radius: 4px 0px 0px 4px;
+	}
+
+	.tab-vertical .nav-tabs .nav-link.active {
+		color: #101010;
+		background-color: #fff !important;
+		border-color: transparent !important;
+	}
+
+	.tab-vertical .nav-tabs .nav-link {
+		border: 1px solid transparent;
+		border-top-left-radius: 4px !important;
+		border-top-right-radius: 0px !important;
+	}
+
+	.tab-vertical .tab-content {
+		overflow: auto;
+		-webkit-border-radius: 0px 4px 4px 4px;
+		-moz-border-radius: 0px 4px 4px 4px;
+		border-radius: 0px 4px 4px 4px;
+		background: #fff;
+		padding: 30px;
+	}
+
+	</style>
 	<body class=" dark-theme  landing-page-demo">
 		<!--Start Page Header-->
 		<header class=" header-basic" id="page-header">
@@ -75,41 +197,24 @@
 		</header>
 		<!--End Page Header-->
 		<!-- Start  Page hero-->
-		<section class="page-hero  d-flex align-items-center" id="page-hero">
-			<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
-			<div class="particles-js  dots" id="particles-js"></div>
+		<section class="page-hero d-flex align-items-center mb-0" id="page-hero">
+			<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.png"></div>
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-lg-6 ">
+					<div class="col-12 col-lg-6 mx-5">
 						<!--Start of .hero-text-area-->
-						<div class="hero-text-area">
+						<div class="hero-text-area mt-0 mx-5">
 							<div class="row">
 								<div class="col-12">
-									<img class="img-fluid p-5"src="assets/images/logo/logoWhiteAndPink.png" style="max-width: 70%;"alt="AI2BC Logo White and Pink"/>
+									<img class="img-fluid" src="assets/images/logo/logoWhiteAndPink.png" style="max-width: 50%;"alt="AI2BC Logo White and Pink"/>
 								</div>
 								<div class="col-10">
-									<p class="hero-subtitle px-5 mx-auto">
+									<p class="hero-subtitle px-2 pt-2 mx-auto text-light">
 										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quasi aperiam, consequuntur animi 
-										nam quo voluptatum saepe quis, illo corporis ipsam modi, ullam quibusdam porro exercitationem sunt reiciendis qui alias!
+										nam quo
 									</p>
 								</div>
-
-								<div class="col-12   ">
-									<div class="cta-links-area "><a class=" btn-outline cta-link cta-link-primary " href="#0">start now</a>
-										<div class="play-btn-row-dir ">
-						<!-- <a class="video-link" href="#" role="button" title="play" data-fancybox="data-fancybox"> -->
-												<div class="play-video-btn">
-													<div class="play-btn"> <i class="fas fa-play icon"></i></div>
-												</div></a></div>
-									</div>
-								</div>
 							</div>
-						</div>
-					</div>
-					<!--start of image-area -->
-					<div class="col-12 mx-md-auto col-lg-6 text-center " data-tilt>  
-						<div class="hero-image-area mb-5 mb-lg-0">
-							<div class="hero-img-wraper"><img class="img-fluid " src="assets/images/hero/tempModel.png" alt="" draggable="false"></div>
 						</div>
 					</div>
 				</div>
@@ -118,9 +223,58 @@
 		<!--End of .hero-text-area-->
 		<!-- End  Page hero-->
 		
+		<!--==================
+		Projects Logos Slider Start
+		===================-->
+		<div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <div class="row">
+					<div class="col-md-4">
+					  <img src="assets/images/other-projects/play2helpLogo.png" alt="Image 1" class="img-fluid w-100">
+					</div>
+					<div class="col-md-4">
+					  <img src="assets/images/other-projects/TokenizerLogo.png" alt="Image 2" class="img-fluid w-100">
+					</div>
+					<div class="col-md-4">
+					  <img src="assets/images/other-projects/smartletLogo.png" alt="Image 3" class="img-fluid w-100">
+					</div>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <div class="row">
+					<div class="col-md-4">
+						<img src="assets/images/other-projects/logoipsum-232.svg" alt="Image 4" class="img-fluid w-100">
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/other-projects/logoipsum-228.svg" alt="Image 4" class="img-fluid w-100">
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/other-projects/logoipsum-229.svg" alt="Image 4" class="img-fluid w-100">
+					</div>
+				  </div>
+				</div>
+				<!-- Add more carousel-item divs as needed -->
+			  </div>
+			  
+			  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			  </a>
+			</div>
+		  </div>
+		  <div style="width:100%; margin-top: 5%;">
+			<hr/>
+		  </div>
+		<!--==================
+		Projects Logos Slider End
+		======================-->
 
 		<!-- Start  about Section-->
-		<section class="about mega-section align-items-center" id="about">
+		<section class="about mega-section align-items-center mt-0" id="about">
 			<div class="container">
 				<!-- Start first about div-->
 				<div class="content-block m-auto">
@@ -128,35 +282,151 @@
 						<div class="col-12 d-flex align-items-center order-1 order-lg-0 about-col pad-end  wow fadeInUp " data-wow-delay="0.6s">
 							<div class="text-area ">
 								<div class="sec-heading centered light-title ">
-									<div class="content-area text-center d-flex justify-content-center">
-										<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text d-flex justify-content-center'>TOKENIZER</span></h2>
-											
-									</div><h3>Creating tokens for <span class='featured-text'>  anything.
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-													<path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>
-												</span>
-											</h3>
+									<div class="content-area text-center d-flex justify-content-center mb-5">
+										<img src="assets/images/logo/LogoWithSlogan.png" style="max-width: 80%; height: auto;" alt="logo with slogan"/>
+									</div>
+										<strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores assumenda ipsum,
+											 facere minus, quidem voluptas consequatur optio eligendi repudiandae adipisci quae dolor
+											  quisquam explicabo repellendus tempore nemo recusandae quibusdam maiores.
+										</strong>
 								</div>
 								<p class="about-text">
-								 
-									Everyone has an affinity for tokens, whether they're free tokens, gift tokens, or those used for amusement park rides.
-									 Now, a novel variety of tokens has emerged for the digital realm. And the process of generating these tokens has become 
-									 incredibly simple with our assistance. Wondering why you should be intrigued? The reasons are quite familiar: tokens for
-									  transactions, the ability to gratify your supporters and clientele, and tokens symbolising fractional ownership, catering
-									   to your cherished ones. Nevertheless, as with any innovation, a horde of consultants materialises, asserting that the concept
-									    is intricate, urging you to part with significant sums of money for their services. Isn't there a more optimal approach? 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fuga similique magnam autem numquam at aut!
+									 Dolore, blanditiis voluptates. Sequi recusandae error esse excepturi libero nisi quod amet, quos quo?
+									 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut vitae delectus! Perferendis harum cum a provident! Ab aliquam architecto,
+									  optio exercitationem porro dolorem odit repellendus distinctio eius, nisi modi.
 								</p>
-								<p class="about-text">
-									Indeed, the solution exists – presenting Tokeniser. The world's pioneering tool that empowers anyone to establish a token with a mere click. 
-									Yet, that's not all; it also crafts all the essential components a token necessitates for its effective existence, encompassing logos,
-									 web pages, and more. So, dispel your apprehensions, for in the imminent future, we're poised to tokenise everything!
-								</p>
-								<div class="cta-area"><a class="btn-solid reveal-start" href="#0">Set up your token</a>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="container d-flex justify-content-center mt-20 light-title">
+					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
+						<div class="tab-vertical">
+							<ul class="nav nav-tabs" id="tab3" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="problem-vertical-tab" data-toggle="tab" href="#problem-vertical" role="tab" aria-controls="problem" aria-selected="true"><strong>PROBLEM?</strong></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="solution-vertical-tab" data-toggle="tab" href="#solution-vertical" role="tab" aria-controls="solution" aria-selected="false"><strong>SOLUTION</strong></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="contact-vertical-tab" data-toggle="tab" href="#businessmodel-vertical" role="tab" aria-controls="businessmodel" aria-selected="false"><strong>BUSINESS MODEL</strong></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="competition-vertical-tab" data-toggle="tab" href="#competition-vertical" role="tab" aria-controls="competition" aria-selected="false"><strong>COMPETITION</strong></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="team-vertical-tab" data-toggle="tab" href="#team-vertical" role="tab" aria-controls="team" aria-selected="false"><strong>TEAM</strong></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="fundraising-vertical-tab" data-toggle="tab" href="#fundraising-vertical" role="tab" aria-controls="fundraising" aria-selected="false"><strong>FUNDRAISING</strong></a>
+								</li>
+							</ul>
+							<div class="tab-content light-title" id="tabContent3">
+								<div class="tab-pane fade show active" id="problem-vertical" role="tabpanel" aria-labelledby="problem-vertical-tab">
+									<p class="lead mt-2">
+										<strong>It is hard to find AI & Blockchain start ups 
+										with higher chance of success who are also 
+										open to new investors.</strong>
+
+										<ul style="list-style:disc;"> 
+										<li>High demand</li>
+										<li>Much froth</li>
+										<li>Immature trends</li>
+										<li>Subjective approach</li>
+										<li>Lock outs</li>
+										</ul>
+									</p>
+									<!-- The following link needs to activate the solution tab -->
+									<p><a style="color:#88D12E;" href="#solution-vertical">So what's the solution?</a></p>
+								</div>
+								<div class="tab-pane fade" id="solution-vertical" role="tabpanel" aria-labelledby="solution-vertical-tab">
+									<p>
+										<strong>
+											We will help create and grow AI & Blockchain start ups with higher change of success using maths & tech
+										</strong>
+										<ul style="list-style:disc;">
+											<li>Under exploited</li>
+											<li>Data decisions</li>
+											<li>Real time adjustments</li>
+											<li>Tech accelerated</li>
+											<li>Automated for speed</li>
+											<li>Social enterprise advantages</li>
+										</ul>
+									</p>
+									<!-- The following link needs to activate the businessmodel tab -->
+									<p><a style="color:#88D12E;" href="#businessmodel-vertical">So what's the business model?</a></p>
+								</div>
+								<div class="tab-pane fade" id="businessmodel-vertical" role="tabpanel" aria-labelledby="businessmodel-vertical-tab">
+									<p>
+										<strong>
+											We will use maths to find undervalued entrepreneurs & build AI + blockchain success to share
+										</strong>
+										<ul style="list-style:disc;">
+											<li>Data led</li>
+											<li>Democratized</li>
+											<li>Sector expertise</li>
+											<li>AI + Blockchain know-how centralized</li>
+											<li>Fast growth w/low cost support</li>
+											<li>50:50 partnerships</li>
+										</ul>
+									</p>
+									<!-- The following link needs to activate the competition tab -->
+									<p><a style="color:#88D12E;" href="#competition-vertical">So what's the competition?</a></p>
+								</div>
+								<div class="tab-pane fade" id="competition-vertical" role="tabpanel" aria-labelledby="competition-vertical-tab">
+									<p>
+										<strong>
+											We compete with your mum, dad, grandparents & rich family friends (if you have any!)
+										</strong>
+										<ul style="list-style:disc;">
+											<li>As pre incubator we compete with angel investors i.e. friends & family (if rich!)</li>
+											<li>If you're not rich we compete with your pocket money, maternity pay or pension.</li>
+											<li>We're faster, much more expert & funding flexible.</li>
+										</ul>
+									</p>
+									<!-- The following link needs to activate the team tab -->
+									<p><a style="color:#88D12E;" href="#team-vertical">So what's the team?</a></p>
+								</div>
+								<div class="tab-pane fade" id="team-vertical" role="tabpanel" aria-labelledby="team-vertical-tab">
+									<ul>
+										<li>
+											CEO/CTO - (Big) Mo Flynn - 1000+ digital biz transformation & start up successes
+										</li>
+										<li>
+											CFO - Toni Yurukova – serial tech entrepreneur
+										</li>
+										<li>
+											CIO - Toni Yurukova – serial tech entrepreneur
+										</li>
+										<li>
+											ADVISORS - All stars who have raised $b's for 500+ companies & delivered alpha returns
+										</li>
+									</ul>
+									<!-- The following link needs to activate the fundraising tab -->
+									<p><a style="color:#88D12E;" href="#fundraising-vertical">So what’s the Fundraising plan?</a></p>
+								</div>
+								<div class="tab-pane fade" id="fundraising-vertical" role="tabpanel" aria-labelledby="fundraising-vertical-tab">
+									<ul>
+										<li>
+											Angel round - $250k est.
+										</li>
+										<li>
+											12 Start ups: Trading, Art, Books, Ads, Benchmarks, Legal, Finance and so many others.
+										</li>
+										<li>
+											1 Breakout & 1 year - Automated for fast success and low cost fails.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</section>
+	<hr/>
 				<!--End first about div-->
 				<!-- Start first about div-->
 		<!-- Start  about Section-->
@@ -171,10 +441,9 @@
 									<div class="content-area text-center d-flex justify-content-center">
 										<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text d-flex justify-content-center'>WHAT WE DO</span></h2>
 									</div>
-									<h4>Embarking on the journey of tokenisation has never been this intuitive and exciting</h4>
+									<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
 									<p class="about-text">
-										With our streamlined process, you're about to delve into a world where tokens become the bridge 
-										between your vision and reality. Here's a sneak peek into the seamless steps that await you:
+										Possimus dolorum sunt, repellat expedita suscipit explicabo ut ab dicta velit quo, quasi reiciendis debitis provident perferendis reprehenderit. Doloremque voluptas dolorem fugiat
 									</p>
 								</div>
 							</div>
@@ -185,14 +454,8 @@
 					<div class="col-12 col-md-6 col-lg-4 mx-auto ">
 						<!--Start First service box-->
 						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-							<div class="service-icon"><i class="flaticon-web-development font-icon"></i></div><span class="service-num hollow-text">1    </span>
 							<div class="service-content">
-								<p class="service-title text-center" style="color: #ff5000;">Step 1</p>
-								<h3 class="service-title text-center">Defining your needs</h3>
-								<p class="service-text text-center">
-									Unveil the exact ingredients required for your token's success. 
-									Our step-by-step guide demystifies the essentials, ensuring a clear understanding of what lies ahead.
-								</p>
+								<img class="w-100" src="assets/images/other-projects/play2helpLogo.png" alt=""/>
 							</div>
 						</div>
 						<!-- End First service box   -->
@@ -200,14 +463,10 @@
 					<div class="col-12 col-md-6 col-lg-4 mx-auto ">
 						<!--Start Second service box-->
 						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
-							<div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div><span class="service-num hollow-text">2    </span>
 							<div class="service-content">
-								<p class="service-title text-center" style="color: #ff5000;">Step 2</p>
-								<h3 class="service-title text-center">Tailored Tokenisation </h3>
-								<p class="service-text text-center">
-									Guided by simplicity, this phase assists you in pinpointing the precise token model
-									 that aligns with your goals. No complexities, just clarity.
-								</p>
+								<div class="service-content">
+									<img class="w-100" src="assets/images/other-projects/tokenizerLogo.png" alt=""/>
+								</div>
 							</div>
 						<!-- End Second service box-->
 						</div>
@@ -215,114 +474,45 @@
 					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
 						<!--Start Third service box-->
 						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
-							<div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span class="service-num hollow-text">3    </span>
 							<div class="service-content">
-								<p class="service-title text-center" style="color: #ff5000;">Step 3</p>
-								<h3 class="service-title text-center">Transcend and Tokenise</h3>
-								<p class="service-text text-center">
-									In just a matter of minutes, witness the birth of your token brand in an interactive and enjoyable process.
-									 This is where your token journey comes to life, and the possibilities begin to unfold.
-								</p>
+								<img class="w-100" src="assets/images/other-projects/smartletLogo.png" alt=""/>
+							</div>
+						<!-- End Third service box-->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mx-auto ">
+						<!--Start First service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+							<div class="service-content">
+								<img class="w-100" src="assets/images/other-projects/play2helpLogo.png" alt=""/>
+							</div>
+						</div>
+						<!-- End First service box   -->
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 mx-auto ">
+						<!--Start Second service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
+							<div class="service-content">
+								<div class="service-content">
+									<img class="w-100" src="assets/images/other-projects/tokenizerLogo.png" alt=""/>
+								</div>
+							</div>
+						<!-- End Second service box-->
+						</div>
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+						<!--Start Third service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+							<div class="service-content">
+								<img class="w-100" src="assets/images/other-projects/smartletLogo.png" alt=""/>
 							</div>
 						<!-- End Third service box-->
 						</div>
 					</div>
 				</div>
+				<div class="plan-cta d-flex justify-content-center"><a class="btn-cta btn-outline" style="background-color:#33c1f9; border-color: #33c1f9; color:#fff" href="#0">View More</a></div>
 			</div>
 		</section>
-		<!-- Start  stats Section-->
-		<section class="stats js-stats-counter mega-section">
-			<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/img2.png" ></div>
-		</section>
-		<!-- End  stats Section-->
- 
-
-		<!-- Start  pricing Section-->
-		<section class="pricing mega-section align-items-center" id="pricing">
-			<div class="container">
-				<div class="sec-heading centered">
-					<div class="content-area align-items-center">
-						<h2 class=" title wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text'>CHOOSE YOUR PACKAGE:</span></h2>
-					</div>
-				</div>
-				<div class="row">
-					<!--First Plan-->
-					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-						<div class="plan wow fadeInUp  " data-wow-delay=".1s ">
-							<div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
-								<h4 class="plane-name">Basic Package</h4>
-								<div class="plan-price">
-									<h4 class="price"><sup class="currency-symbol">£</sup>X.XX</h4>
-								</div>
-							</div>
-
-							<div class="plan-details">
-								<p class="plan-list">
-								<span class="plan-feat">This bundle comprises the Token, Logo,
-									Webpage, Social media integration (Auto Discord/Telegram),
-									 Email services, Database access, and full entry to all the Dashboards.</span>
-								</p>
-								<!-- <ul class="plan-list">
-									<li class="plan-feat "> </li>
-									<li class="plan-feat "> <span class="feat-text">Email integration (Microsoft and Gmail). </span></li>
-									<li class="plan-feat "> <span class="feat-text">Post-showing feedback from renters.</span></li>
-									<li class="plan-feat "> <span class="feat-text">PM Software Integration.</span></li>
-									<li class="plan-feat "> <span class="feat-text">Follow-up email and SMS.</span></li>
-									<li class="plan-feat "> <span class="feat-text">Public website with chatbot.</span></li>
-									<li class="plan-feat "> <span class="feat-text">Two-way calendar sync..</span></li>
-								</ul> -->
-							</div>
-							<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Select Package</a></div>
-						</div>
-					</div>
-					<!--Second-plan-->
-					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-						<div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
-							<div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
-								<h4 class="plane-name">Advanced Package</h4>
-							<div class="plan-price">
-								<h4 class="price"><sup class="currency-symbol">£</sup>X.XX</h4>
-							</div>
-						</div>
-
-						<div class="plan-details">
-							<p class="plan-list">
-							<span class="plan-feat">
-								This package encompasses the Token, Logo, Webpage, Social media integration (Auto Discord/Telegram),
-								 Email services, CompaniesHouse integration, CRM Database access, Ads support, B2B Partner features,
-								  Recruitment pack inclusion, Accountancy pack inclusion, and complete access to all the Dashboards.
-							</span>
-							</p>
-						</div>
-						<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Select Package</a></div>
-						</div>
-					</div>
-					<!--Third-plan-->
-					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
-						<div class="plan   featured  wow fadeInUp  " data-wow-delay=".5s ">
-							<div class="plan-head"><i class="flaticon-box plan-icon"></i>
-								<h4 class="plane-name">Custom Package</h4>
-								<div class="plan-price">
-									<div class="plan-price">
-										<h4 class="price"><sup class="currency-symbol">£</sup>X.XX</h4>
-									</div>
-								</div>
-								<div class="plan-details">
-									<p class="plan-list">
-									<span class="plan-feat">
-										This package comprises the Token, Logo, Webpage, Social media integration (Auto Discord/Telegram), Email services, 
-										CompaniesHouse integration, CRM Database access, Ads support, B2B Partner features, Recruitment pack inclusion, 
-										and complete access to all the Dashboards.
-									</span>
-									</p>
-								</div>
-								<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Select Package</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End  pricing Section-->
 
 		<!-- Start  faq Section-->
 		<section class="faq mega-section d-flex justify-content-center" id="faq">
@@ -337,15 +527,12 @@
 							<div class="content-area mx-5">
 								<h2 class="title wow fadeInUp " data-wow-delay=".2s"><span class='hollow-text'>FAQ</span></h2>
 								<h3 class="mx-auto px-auto text-center justify-content-center">
-									Welcome to the realm of tokenization, where possibilities are redefined 
-									and digital innovation takes center stage.  
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perspiciatis aspernatur, earum quia, rerum quod porro id placeat perferendis
+									 nostrum inventore distinctio nihil ipsa. Cumque qui quibusdam earum delectus! Ea?
 								</h3>
-								<p class="mx-auto px-auto text-center justify-content-center">If you've ever wondered about the power of tokens – those digital representations of value, 
-									ownership, and utility – you're in the right place. Our platform is your gateway to effortlessly 
-									bring your ideas to life in the form of tokens, with benefits ranging from enhanced engagement to 
-									streamlined transactions. To provide you with a clearer picture, we've compiled answers to some of 
-									the most common questions you might have about our token generating website. Explore the FAQs below 
-									and embark on a journey of transformation and empowerment.
+								<p class="mx-auto px-auto text-center justify-content-center">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, suscipit deleniti soluta ipsam at doloribus saepe sit sapiente expedita a 
+									quis voluptatum deserunt est illo voluptate, nihil ipsum, quae numquam.
 								</p>
 							</div>
 						</div>
@@ -355,8 +542,7 @@
 								<div class="card-header " id="heading-1">
 									<h5 class="mb-0 faq-title">
 										<button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" 
-											data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1"
-											>What exactly is tokenisation and why should I consider it?</button>
+											data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">FREQUENTLY ASKED QUESTION ONE</button>
 									</h5>
 								</div>
 								<div class="collapse " id="collapse-1" aria-labelledby="collapse-1" data-bs-parent="#accordion">
@@ -373,7 +559,8 @@
 								<div class="card-header " id="heading-2">
 									<h5 class="mb-0 faq-title">
 										<button class="btn btn-link  faq-btn  collapsed " 
-											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">How do I create a token using your platform?</button>
+											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+											FREQUENTLY ASKED QUESTION TWO</button>
 									</h5>
 								</div>
 								<div class="collapse " id="collapse-2" aria-labelledby="collapse-2" data-bs-parent="#accordion">
@@ -386,7 +573,7 @@
 								<div class="card-header " id="heading-3">
 									<h5 class="mb-0 faq-title">
 										<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" 
-											data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">Can I customise my tokens and their features?</button>
+											data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">FREQUENTLY ASKED QUESTION THREE</button>
 									</h5>
 								</div>
 								<div class="collapse " id="collapse-3" aria-labelledby="collapse-3" data-bs-parent="#accordion">
@@ -399,7 +586,7 @@
 								<div class="card-header " id="heading-4">
 									<h5 class="mb-0 faq-title">
 										<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" 
-											data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Is this suitable for beginners or do I need technical expertise?</button>
+											data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">FREQUENTLY ASKED QUESTION FOUR</button>
 									</h5>
 								</div>
 								<div class="collapse " id="collapse-4" aria-labelledby="collapse-4" data-bs-parent="#accordion">
@@ -411,7 +598,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="cta-area mt-4 d-flex justify-content-center"><a class="btn-solid reveal-start" href="#0">View more</a></div>
+			<div class="cta-area mt-4 d-flex justify-content-center"><a class="btn-solid reveal-start" style="background-color: #FF48A5; color: white; border-color: #FF48A5;" href="#0">View more</a></div>
 		</section>
 		<!-- End  faq Section-->
 
@@ -473,7 +660,7 @@
 			<div class="container p-4">
 				<div class="row footer-cols">
 					<div class="col-12 col-md-8 col-lg-4 footer-col mt-5">
-						<img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/logo-light.png" alt="logo"/>
+						<img class="img-fluid footer-logo w-50" loading="lazy" src="assets/images/logo/logo.png" alt="logo"/>
 						<div class="footer-col-content-wrapper">
 								<div class="footer-col-content-wrapper">
 									<div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a></div>
@@ -487,7 +674,7 @@
 							<ul class="footer-menu ">
 								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#about">About</a>
 								</li>
-								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#howItWorks">How it works</a>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#whatWeDo">What We Do</a>
 								</li>
 								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#faq">FAQ</a>
 								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#Contact">Contact</a>
@@ -510,7 +697,7 @@
 							</ul>
 						</div>
 					</div>
-				<div class="col-12 col-lg-2 footer-col mt-5 mx-5">
+				<div class="col-12 col-lg-2 footer-col mt-5 d-flex">
 					<div class="contact-info-card">
 						<div class="social-icons">
 							<div class="sc-wrapper dir-col sc-size-32">
@@ -532,7 +719,7 @@
 							<p class="credits">
 								&copy; 2023
 								All rights reserved to
-													 <a class="link" href="#0">AI2BC - Tokenizer</a>
+													 <a class="link" href="#0">AI2BC Ltd</a>
 							</p>
 						</div>
 					</div>
@@ -547,27 +734,30 @@
 		<div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
 		</div>
 		<!-- End back-to-top Component-->   
-				<!--     JQuery     -->
-				<script src="js/vendors/jquery-3.6.1.min.js"></script>
-				<!--     appear     -->
-				<script src="js/vendors/appear.min.js"></script>
-				<!--     bootstrap     -->
-				<script src="js/vendors/bootstrap.bundle.min.js"></script>
-				<!--     countTo     -->
-				<script src="js/vendors/jquery.countTo.js"></script>
-				<!--     wow     -->
-				<script src="js/vendors/wow.min.js"></script>
-				<!--     swiper     -->
-				<script src="js/vendors/swiper-bundle.min.js"></script>
-				<!--     particles     -->
-				<script src="js/vendors/particles.min.js"></script>
-				<!--     Vanilla-tilt     -->
-				<script src="js/vendors/vanilla-tilt.min.js"></script>
-				<!--     isotope     -->
-				<script src="js/vendors/isotope-min.js"></script>
-				<!--     fancybox     -->
-				<script src="js/vendors/jquery.fancybox.min.js"></script>
-				<!--     main     -->
-				<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!--     JQuery     -->
+		<script src="js/vendors/jquery-3.6.1.min.js"></script>
+		<!--     appear     -->
+		<script src="js/vendors/appear.min.js"></script>
+		<!--     bootstrap     -->
+		<script src="js/vendors/bootstrap.bundle.min.js"></script>
+		<!--     countTo     -->
+		<script src="js/vendors/jquery.countTo.js"></script>
+		<!--     wow     -->
+		<script src="js/vendors/wow.min.js"></script>
+		<!--     swiper     -->
+		<script src="js/vendors/swiper-bundle.min.js"></script>
+		<!--     particles     -->
+		<script src="js/vendors/particles.min.js"></script>
+		<!--     Vanilla-tilt     -->
+		<script src="js/vendors/vanilla-tilt.min.js"></script>
+		<!--     isotope     -->
+		<script src="js/vendors/isotope-min.js"></script>
+		<!--     fancybox     -->
+		<script src="js/vendors/jquery.fancybox.min.js"></script>
+		<!--     main     -->
+		<script src="js/main.js"></script>
 	</body>
 </html>
