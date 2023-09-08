@@ -1,2 +1,2 @@
-# Tokenizer
-repo for Tokenizer prototype
+# AI2BC
+repo for AI2BC
