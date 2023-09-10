@@ -52,123 +52,123 @@
 		</script>
 	</head>
 	<style>
-    .carousel-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .carousel-item {
-       /* Divide equally and adjust space */
-      background-color: white; /* Background color */
-      margin: 10px; /* Adjust margin */
-    }
-    .carousel-item img {
-      max-width: 80%;
-		padding: 20px;
-      height: auto;
-      display: block;
-      margin: auto;
-	  justify-content: center;
-    }
-    .carousel-control-prev, .carousel-control-next {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.3);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 50%; /* Center vertically */
-      transform: translateY(-50%); /* Adjust position */
-    }
-    .carousel-control-prev {
-      left: -20px; /* Position to the left */
-    }
-    .carousel-control-next {
-      right: -20px; /* Position to the right */
-    }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-      background-color: transparent;
-      border: none;
-      font-size: 30px;
-    }
-	/* responsive line/stroke effect*/
-		hr {
-	background: black;
-	height: 2px;
-	position: relative;
-	}
-
-	hr:before {
-	width: 10px;
-	height: 10px;
-	background: black;
-	content: '';
-	display: block;
-	position: absolute;
-	left: -2px;
-	top: -4px;
-	border-radius: 5px;
-	}
-
-	hr:after {
-	width: 10px;
-	height: 10px;
-	background: black;
-	content: '';
-	display: block;
-	position: absolute;
-	right: -2px;
-	top: -4px;
-	border-radius: 5px;
-	}
-	/* For the tab section */
-	.tab-vertical .nav.nav-tabs {
-    float: left;
-    display: block;
-    margin-right: 0px;
-    border-bottom: 0;
-	}
-
-	.tab-vertical .nav.nav-tabs .nav-item {
-		margin-bottom: 6px;
-	}
-
-	.tab-vertical .nav-tabs .nav-link {
-		border: 1px solid transparent;
-		border-top-left-radius: .25rem;
-		border-top-right-radius: .25rem;
-		background: #fff;
-		padding: 17px 49px;
-		color: #ffff;
-		background-color: #88D12E;
-		-webkit-border-radius: 4px 0px 0px 4px;
-		-moz-border-radius: 4px 0px 0px 4px;
-		border-radius: 4px 0px 0px 4px;
-	}
-
-	.tab-vertical .nav-tabs .nav-link.active {
-		color: #101010;
-		background-color: #fff !important;
-		border-color: transparent !important;
-	}
-
-	.tab-vertical .nav-tabs .nav-link {
-		border: 1px solid transparent;
-		border-top-left-radius: 4px !important;
-		border-top-right-radius: 0px !important;
-	}
-
-	.tab-vertical .tab-content {
-		overflow: auto;
-		-webkit-border-radius: 0px 4px 4px 4px;
-		-moz-border-radius: 0px 4px 4px 4px;
-		border-radius: 0px 4px 4px 4px;
-		background: #fff;
-		padding: 30px;
-	}
+	    .carousel-inner {
+	      display: flex;
+	      flex-wrap: wrap;
+	      justify-content: center;
+	    }
+	    .carousel-item {
+	       /* Divide equally and adjust space */
+	      background-color: white; /* Background color */
+	      margin: 10px; /* Adjust margin */
+	    }
+	    .carousel-item img {
+	      max-width: 80%;
+			padding: 20px;
+	      height: auto;
+	      display: block;
+	      margin: auto;
+		  justify-content: center;
+	    }
+	    .carousel-control-prev, .carousel-control-next {
+	      width: 40px;
+	      height: 40px;
+	      border-radius: 50%;
+	      background-color: rgba(0, 0, 0, 0.3);
+	      color: white;
+	      display: flex;
+	      align-items: center;
+	      justify-content: center;
+	      position: absolute;
+	      top: 50%; /* Center vertically */
+	      transform: translateY(-50%); /* Adjust position */
+	    }
+	    .carousel-control-prev {
+	      left: -20px; /* Position to the left */
+	    }
+	    .carousel-control-next {
+	      right: -20px; /* Position to the right */
+	    }
+	    .carousel-control-prev-icon, .carousel-control-next-icon {
+	      background-color: transparent;
+	      border: none;
+	      font-size: 30px;
+	    }
+		/* responsive line/stroke effect*/
+			hr {
+		background: black;
+		height: 2px;
+		position: relative;
+		}
+	
+		hr:before {
+		width: 10px;
+		height: 10px;
+		background: black;
+		content: '';
+		display: block;
+		position: absolute;
+		left: -2px;
+		top: -4px;
+		border-radius: 5px;
+		}
+	
+		hr:after {
+		width: 10px;
+		height: 10px;
+		background: black;
+		content: '';
+		display: block;
+		position: absolute;
+		right: -2px;
+		top: -4px;
+		border-radius: 5px;
+		}
+		/* For the tab section */
+		.tab-vertical .nav.nav-tabs {
+	    float: left;
+	    display: block;
+	    margin-right: 0px;
+	    border-bottom: 0;
+		}
+	
+		.tab-vertical .nav.nav-tabs .nav-item {
+			margin-bottom: 6px;
+		}
+	
+		.tab-vertical .nav-tabs .nav-link {
+			border: 1px solid transparent;
+			border-top-left-radius: .25rem;
+			border-top-right-radius: .25rem;
+			background: #fff;
+			padding: 17px 49px;
+			color: #ffff;
+			background-color: #88D12E;
+			-webkit-border-radius: 4px 0px 0px 4px;
+			-moz-border-radius: 4px 0px 0px 4px;
+			border-radius: 4px 0px 0px 4px;
+		}
+	
+		.tab-vertical .nav-tabs .nav-link.active {
+			color: #101010;
+			background-color: #fff !important;
+			border-color: transparent !important;
+		}
+	
+		.tab-vertical .nav-tabs .nav-link {
+			border: 1px solid transparent;
+			border-top-left-radius: 4px !important;
+			border-top-right-radius: 0px !important;
+		}
+	
+		.tab-vertical .tab-content {
+			overflow: auto;
+			-webkit-border-radius: 0px 4px 4px 4px;
+			-moz-border-radius: 0px 4px 4px 4px;
+			border-radius: 0px 4px 4px 4px;
+			background: #fff;
+			padding: 30px;
+		}
 
 	</style>
 	<body class=" dark-theme  landing-page-demo">
